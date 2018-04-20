@@ -17,7 +17,7 @@ $RECYCLE.BIN/
 #back up file
 *.bak
 *.bck
-*.bcm
+*.dcm
 
 # Windows shortcuts
 *.lnk
