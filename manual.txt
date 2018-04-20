@@ -1,0 +1,21 @@
+kicad to KitMill
+
+### create new lobrary of footprint
+	1. foot print editor. "create new library and save current footprint"
+	2. move Pcbnew. Preferences > footprint library wizard > from computer.
+	3. search and add the footprint
+	4. move Eeschema. launch CvPcb and do the same process
+	5. Then, you can call your library
+
+### convert PCB to gerber files for KitMill
+	1. File > Plot
+	2. check the radio buttons of F.Cu, B.Cu, Edge.Cu. generate gerber.
+	3. In the case of Dril, set as follows. "mm, keep zero, 3:3, gerber, absolute position". Then, Generate.
+	4. Open the dril data. append "%FSLAX33Y33*%" at the head of the file.
+
+### Orimin PCB
+	pattern data(parts) = F.Cu
+	pattern data(soldering) = B.Cu
+	Outline = Edge.Cu
+
+	Finish!!
